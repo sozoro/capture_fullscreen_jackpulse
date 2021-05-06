@@ -1,10 +1,12 @@
 # capture_fullscreen_jackpulse
 
-Run ffmpeg to capture full screen video of selected DISPLAY and Pulse Audio outputs via Jack.
+`capture_fullscreen_jackpulse.sh` runs ffmpeg to capture full screen video of selected DISPLAY and Pulse Audio outputs via Jack.  
 
-### Usage
+`checkMic.sh` is a one-liner helper script for testing Jack system input.
 
-To use this script, load Jack modules for PulseAudio like this:
+### Note
+
+To use `capture_fullscreen_jackpulse.sh`, load Jack modules for PulseAudio like this:
 
 ```Shell
 pactl load-module module-jack-sink   channels=2 client_name=\"PulseAudio JACK Sink-$UID\"
