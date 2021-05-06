@@ -1,5 +1,9 @@
 # capture_fullscreen_jackpulse
 
+Run ffmpeg to capture full screen video of selected DISPLAY and Pulse Audio outputs via Jack.
+
+### Usage
+
 To use this script, load Jack modules for PulseAudio like this:
 
 ```Shell
@@ -8,4 +12,4 @@ pactl load-module module-jack-source channels=2 client_name=\"PulseAudio JACK Si
 pacmd set-default-sink jack_out
 ```
 
-Or, edit `PulseAudioJackSink` environment variable in this script.
+Or, edit `PulseAudioJackSink` environment variable in the script.
