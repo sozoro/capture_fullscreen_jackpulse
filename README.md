@@ -7,3 +7,5 @@ pactl load-module module-jack-sink   channels=2 client_name=\"PulseAudio JACK Si
 pactl load-module module-jack-source channels=2 client_name=\"PulseAudio JACK Sink-$UID\"
 pacmd set-default-sink jack_out
 ```
+
+Or, edit `PulseAudioJackSink` environment variable in this script.
